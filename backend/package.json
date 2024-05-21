@@ -6,11 +6,14 @@
     "express": "^4.19.2",
     "express-async-errors": "^3.1.1",
     "fawn": "^2.1.5",
+    "geoip-lite": "^1.4.10",
     "joi": "^17.13.1",
     "joi-objectid": "^4.0.2",
     "jsonwebtoken": "^9.0.2",
     "lodash": "^4.17.21",
     "mongoose": "^8.4.0",
+    "qrcode": "^1.5.3",
+    "request-ip": "^3.3.0",
     "winston": "^3.13.0"
   }
 }
