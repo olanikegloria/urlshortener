@@ -6,7 +6,7 @@ const generateQrCode = async (urlShortenerId, longUrl) => {
   try {
     const qrCodeData = await QRCode.toDataURL(longUrl, {
       color: {
-        dark: "	 ",
+        dark: "#000000",
         light: "#FFC0CB",
       },
       margin: 4,

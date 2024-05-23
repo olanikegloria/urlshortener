@@ -32,7 +32,7 @@ const createUrl = async (req, res) => {
     }
     const newUrl = await UrlShortenerModel.create({ shortUrl, longUrl });
     await generateQrCode(newUrl._id, newUrl.longUrl);
-    return res.status(201).json({ message: "URL created successfully" });
+    return res.status(201).json({ message: "URL created successfully", shortUrl: newUrl.shortUrl });
   } catch (e) {
     return res.status(500).send(e.message);
   }
