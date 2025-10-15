@@ -1,4 +1,4 @@
-const UrlShortenerModel = require("../models/UrlShortenerModel");
+const UrlShortenerModel = require("../models/urlShortenerModel");
 const { generateQrCode } = require("./qrcodeController");
 const Visitor = require("../models/visitorModel");
 const requestIp = require("request-ip");
@@ -78,8 +78,6 @@ const getUrl = async (req, res) => {
       userAgent: userAgent
   });
   await visitor.save();
-
-    await visitor.save();
 
     res.redirect(longUrl);
   } catch (e) {

@@ -1,5 +1,5 @@
 const Visitor = require('../models/visitorModel');
-const UrlShortner = require('../models/UrlShortenerModel');
+const UrlShortner = require('../models/urlShortenerModel');
 
 const getVisitors = async (req, res) => {
     try {

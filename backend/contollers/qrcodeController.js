@@ -1,5 +1,5 @@
 const QRCode = require("qrcode");
-const UrlShortener = require("../models/UrlShortenerModel");
+const UrlShortener = require("../models/urlShortenerModel");
 const QrCode = require("../models/qrCodeModel");
 
 const generateQrCode = async (urlShortenerId, longUrl) => {
